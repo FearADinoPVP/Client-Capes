@@ -7,11 +7,11 @@ public static void downloadCape(final AbstractClientPlayer player)
 	String uname = player.getNameClear();
 
       if (uname != null && !uname.isEmpty())
-      {
-        if(<Your Cape Controller Class Name>.<Your Boolean Name> == true) {
-      	  final ResourceLocation capeTrue = new ResourceLocation("<your assets folder>/<CapeImageName>.png");
-      	  if(capeTrue !=null) {
-      		  player.setLocationOfCape(capeTrue);
+      { //You may replace "CapeBoolean" with your classname if you created one with another name for the boolean
+        if(CapeBoolean.Cape == true) {				//Edit this to your cape image's file location
+      	  final ResourceLocation capeLocation = new ResourceLocation("<your assets folder>/<CapeImageName>.png");
+      	  if(capeLocation !=null) {
+      		  player.setLocationOfCape(capeLocation);
       	  }
         }
        }
